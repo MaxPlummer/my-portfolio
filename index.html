@@ -16,23 +16,129 @@
       integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
       crossorigin="anonymous"
     />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
       <div class="logo">
-        <img src="images/logo2.png" alt="logo">
+        <picture>
+          <source srcset="images/logo2_lg.png" media="(min-width:800px)" />
+          <img src="images/logo2.png" alt="Logo" />
+        </picture>
       </div>
       <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
+        <span class="fa fa-2x fa-bars"></span>
       </button>
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Academics</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">About Me</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">My Projects</a></li>
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#academics" class="nav__link">Academics</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">My Projects</a>
+          </li>
         </ul>
       </nav>
     </header>
+
+    <!-- Intro -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hello! I am <strong>Max Plummer</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+      <img
+        src="images/pfp_square.jpg"
+        alt="A Picture of Max"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- Academics -->
+    <section class="academics" id="academics">
+      <h2 class="section__title section__title--academics">Academics</h2>
+
+      <div class="academics">
+        <div class="achievement">
+          <h3>University of Florida</h3>
+          <p>
+            Graduated from the University of Florida in 2025 with a Bachelor of
+            Science in Computer Science.
+          </p>
+        </div>
+
+        <div class="achievement">
+          <h3>GPA</h3>
+          <p>
+            Worked hard to maintain respectable grades every semester to end
+            with a final grade point average of 3.66.
+          </p>
+        </div>
+
+        <div class="achievement">
+          <h3>Accolades</h3>
+          <p>
+            Received recognition for success on the Dean's List and graduated
+            cum laude.
+          </p>
+        </div>
+      </div>
+
+      <a href="#projects" class="btn">My Projects</a>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <h2 class="section__title section__title--about">About Me</h2>
+      <p class="section__subtitle section__subtitle--about">Front-End developer from Florida</p>
+
+      <div class="about__body">
+        <p>I am a starting web developer living in Florida.</p>
+      </div>
+
+      <!-- <img src="images/#" alt="" /> -->
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2 class="section__title section__title--projects"></h2>
+      <p class="section__subtitle section__subtitle--projects"></p>
+
+      <div class="portfolio">
+        <a href="#" class="portfolio__item">
+          <!-- <img src="project1.png" alt="" class="portfolio__img" /> -->
+        </a>
+
+        <a href="#" class="portfolio__item">
+          <!-- <img src="project2.png" alt="" class="portfolio__img" /> -->
+        </a>
+
+        <a href="#" class="portfolio__item">
+          <!-- <img src="project3.png" alt="" class="portfolio__img" /> -->
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <a href="mailto:me@email.com" class="footer__link">me@email.com</a>
+      <ul class="social-list">
+        <li class="social-list__item"><a class="social-list__link">A</a></li>
+        <li class="social-list__item"><a class="social-list__link">B</a></li>
+        <li class="social-list__item"><a class="social-list__link">C</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
