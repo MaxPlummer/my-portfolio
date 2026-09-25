@@ -125,6 +125,9 @@ h3 {
   background: var(--clr-accent);
   font-family: var(--ff-secondary);
   padding: 0.25em 1em;
+}
+
+.section__subtitle--intro {
   margin-bottom: 1em;
 }
 
@@ -224,5 +227,61 @@ nav {
 
   .achievement + .achievement {
     margin-left: 2em;
+  }
+}
+
+/* About */
+
+.about {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section__title--about {
+  font-weight: var(--fw-bold);
+}
+
+.section__subtitle--about {
+  display: inline-block;
+}
+
+.about__body {
+  display: block;
+}
+
+.about__img {
+  box-shadow: var(--bs);
+}
+
+@media (min-width: 600px) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    grid-template-areas: 
+      "title image" 
+      "subtitle image" 
+      "text image";
+    grid-column-gap: 2em;
+  }
+
+  .section__title--about {
+    grid-column: 1;
+  }
+
+  .section__subtitle--about {
+    align-self: start;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 2em);
+    padding-left: 1em;
+    padding-right: calc(200px + 4em);
+  }
+
+  .about__img {
+    grid-area: image;
+    position: relative;
+    z-index: 2;
   }
 }
