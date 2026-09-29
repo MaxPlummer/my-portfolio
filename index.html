@@ -1,9 +1,26 @@
-<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Max Plummer's Portfolio</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
     <!-- Normalize CSS file for browser support -->
     <link
       rel="stylesheet"
@@ -26,20 +43,24 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-    <header>
+    <!-- Header -->
+    <header class="header">
       <div class="logo">
         <picture>
-          <source srcset="images/logo2_lg.png" media="(min-width:800px)" />
-          <img src="images/logo2.png" alt="Logo" />
+          <source srcset="images/logo1_lg.png" media="(min-width:800px)" />
+          <img src="images/logo1.png" alt="Logo" />
         </picture>
       </div>
       <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="fa fa-2x fa-bars"></span>
+        <span class="fa fa-bars hamburger"></span>
       </button>
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
           <li class="nav__item">
             <a href="#academics" class="nav__link">Academics</a>
           </li>
@@ -47,7 +68,7 @@
             <a href="#about" class="nav__link">About Me</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">My Projects</a>
+            <a href="#projects" class="nav__link">My Projects</a>
           </li>
         </ul>
       </nav>
@@ -70,9 +91,9 @@
     <section class="academics" id="academics">
       <h2 class="section__title section__title--academics">Academics</h2>
 
-      <div class="academics">
+      <div class="achievements">
         <div class="achievement">
-          <h3>University of Florida</h3>
+          <h3>College</h3>
           <p>
             Graduated from the University of Florida in 2025 with a Bachelor of
             Science in Computer Science.
@@ -90,8 +111,8 @@
         <div class="achievement">
           <h3>Accolades</h3>
           <p>
-            Received recognition for success on the Dean's List and graduated
-            cum laude.
+            Graduated cum laude and received recognition for success on the
+            Dean's List.
           </p>
         </div>
       </div>
@@ -102,43 +123,84 @@
     <!-- About -->
     <section class="about" id="about">
       <h2 class="section__title section__title--about">About Me</h2>
-      <p class="section__subtitle section__subtitle--about">Front-End developer from Florida</p>
+      <p class="section__subtitle section__subtitle--about">
+        Web developer from Florida
+      </p>
 
       <div class="about__body">
-        <p>I am a starting web developer living in Florida.</p>
+        <p>
+          I am a UF graduate who got invested in web development during an
+          internet programming course I took in my final year at the university.
+        </p>
+        <p>
+          Since then, I have been learning more about web development online. I
+          worked as a web page quality rater with TELUS Digital for 8 months,
+          which sharpened my eye for design and deepened my interest in becoming
+          a developer.
+        </p>
       </div>
 
-      <!-- <img src="images/#" alt="" /> -->
+      <img src="images/pfp.jpg" alt="A Picture of Max" class="about__img" />
     </section>
 
     <!-- Projects -->
     <section class="projects" id="projects">
-      <h2 class="section__title section__title--projects"></h2>
-      <p class="section__subtitle section__subtitle--projects"></p>
+      <h2 class="section__title section__title--projects">My Projects</h2>
+      <p class="section__subtitle section__subtitle--projects">
+        A selection of code challenges I completed
+      </p>
 
       <div class="portfolio">
-        <a href="#" class="portfolio__item">
-          <!-- <img src="project1.png" alt="" class="portfolio__img" /> -->
+        <a href="news_homepage_project.html" class="portfolio__item">
+          <img
+            src="images/project_news.png"
+            alt="News Homepage Project"
+            class="portfolio__img"
+          />
         </a>
 
-        <a href="#" class="portfolio__item">
-          <!-- <img src="project2.png" alt="" class="portfolio__img" /> -->
+        <a href="testimonials_grid_project.html" class="portfolio__item">
+          <img
+            src="images/project_testimonials.png"
+            alt="Testimonials Grid Project"
+            class="portfolio__img"
+          />
         </a>
 
-        <a href="#" class="portfolio__item">
-          <!-- <img src="project3.png" alt="" class="portfolio__img" /> -->
+        <a href="space_tourism_project.html" class="portfolio__item">
+          <img
+            src="images/project_space.png"
+            alt="Space Tourism Project"
+            class="portfolio__img"
+          />
         </a>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-      <a href="mailto:me@email.com" class="footer__link">me@email.com</a>
+    <footer class="footer">
+      <a href="mailto:maxwellvplummer@gmail.com" class="footer__link"
+        >maxwellvplummer@gmail.com</a
+      >
       <ul class="social-list">
-        <li class="social-list__item"><a class="social-list__link">A</a></li>
-        <li class="social-list__item"><a class="social-list__link">B</a></li>
-        <li class="social-list__item"><a class="social-list__link">C</a></li>
+        <li class="social-list__item">
+          <a
+            href="https://github.com/MaxPlummer"
+            class="social-list__link"
+            target="_blank"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+        </li>
+        <li class="social-list__item">
+          <a
+            href="https://www.linkedin.com/in/maxwell-plummer-1b2b13291"
+            class="social-list__link"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i> LinkedIn</a
+          >
+        </li>
       </ul>
     </footer>
+    <script src="js/index.js"></script>
   </body>
 </html>
