@@ -451,3 +451,11 @@ h3 {
 .social-list__link {
   padding: 0 0.5em;
 }
+
+/* Portfolio Item */
+
+.portfolio-item-individual {
+  padding: 0 2em 2em;
+  max-width: 800px;
+  margin: 0 auto;
+}
