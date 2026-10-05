@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omelette Recipe Project</title>
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <!-- Normalize CSS file for browser support -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <picture>
+          <source srcset="images/logo1_lg.png" media="(min-width:800px)" />
+          <img src="images/logo1.png" alt="Logo" />
+        </picture>
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="fa fa-bars hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#academics" class="nav__link">Academics</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#projects" class="nav__link">My Projects</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Intro -->
+    <section class="intro">
+      <h1 class="section__title section__title--intro">
+        Project: <strong>Recipe Page</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        Top Stories at a Glance
+      </p>
+      <img
+        src="images/project_omelette.png"
+        alt="A picture of the news homepage"
+        class="intro__img intro__img__portfolio"
+      />
+    </section>
+
+    <div class="portfolio-item-wrapper">
+      <div class="portfolio-item-individual">
+        <p>
+          The goal of this project was to create a simple recipe page for making
+          an omelette. The page is meant to be semantically appropriate with
+          responsiveness in mind as well.
+        </p>
+        <img
+          src="images/project_omelette_lg.png"
+          alt="A picture of the omelette recipe page"
+          class="portfolio-item-individual__img"
+        />
+        <p>
+          This project had me explore tables more thoroughly. I played around
+          with the borders and decided to use the last-child pseudo element to
+          ensure the bottom borders only appear between the table items, not on
+          the top or bottom of the table.
+        </p>
+        <p>
+          I ran into an issue with the recipe list where the Google font of the
+          numbers was being overridden by a default font. To address this, I did
+          some research on CSS counters and tried implementing a list counter to
+          place numbers before each list item using the before pseudo element,
+          which solved the problem.
+        </p>
+        <p>
+          Check out my
+          <a
+            href="https://github.com/MaxPlummer/omelette-recipe-page"
+            class="portfolio-item-individual__link"
+            target="_blank"
+            >solution here</a
+          >
+          or the
+          <a
+            href="https://maxplummer.github.io/omelette-recipe-page/"
+            class="portfolio-item-individual__link"
+            target="_blank"
+            >live site here</a
+          >.
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:maxwellvplummer@gmail.com" class="footer__link"
+        >maxwellvplummer@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            href="https://github.com/MaxPlummer"
+            class="social-list__link"
+            target="_blank"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+        </li>
+        <li class="social-list__item">
+          <a
+            href="https://www.linkedin.com/in/maxwell-plummer-1b2b13291"
+            class="social-list__link"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i> LinkedIn</a
+          >
+        </li>
+      </ul>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
