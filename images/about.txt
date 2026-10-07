@@ -3,4 +3,8 @@ This favicon was generated using the following font:
 - Font Title: The Nautigal
 - Font Author: undefined
 - Font Source: https://fonts.gstatic.com/s/thenautigal/v8/VdGGAZ8ZH51Lvng9fQV2bfKTWypA2_-C7LoS7g.ttf
-- Font License: undefined)
+- Font License: undefined
+
+Palm tree image:
+- Source: https://www.publicdomainpictures.net/en/view-image.php?image=152035&picture=palm-tree-silhouette
+- License: CC0 Public Domain
